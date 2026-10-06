@@ -1,0 +1,106 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<header class="cabecalho">
+  <div class="logo">
+    <h1>🪗 Museu Gonzagão</h1>
+  </div>
+  <nav class="menu-navegacao">
+    <ul>
+        <link rel="stylesheet" href="style.css">
+      <li><a href="#historia">História</a></li>
+      <li><a href="#cidade">A Cidade</a></li>
+      <li><a href="#musicas">Músicas</a></li>
+      <li><a href="#acervo">Registros</a></li>
+      <li><a href="#visite">Visite</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Seção de Destaques (Estilo Paço do Frevo) -->
+<section class="destaques">
+  <div class="bloco laranja">
+    <h2>Agende sua visita</h2>
+    <p>Conheça o Parque Aza Branca em grupo.</p>
+    <a href="#" class="btn">Clique aqui ></a>
+  </div>
+  <div class="bloco verde">
+    <h2>Compre seu Ingresso</h2>
+    <p>Garanta sua entrada antecipada e evite filas.</p>
+    <a href="#" class="btn">Saiba mais ></a>
+  </div>
+</section>
+
+<div class="container-principal">
+  <main class="conteudo">
+    
+    <!-- NOVO: Slide de Imagens e Registros do Museu -->
+    <section id="acervo" class="secao-slide">
+      <h2>Registros e Acervo Histórico</h2>
+      
+      <div class="carrossel-container">
+        <!-- Slides -->
+        <div class="slide fade ativo">
+          <img src="https://www.gp1.com.br/media/image_bank/2022/8/sanfoneiros-de-todas-as-idades-participaram-do-evento.jpg.1038x590_q85_crop.webp" alt="Acordeão e Sanfona">
+          <div class="legenda-slide">Acervo de Sanfonas Históricas de Luiz Gonzaga</div>
+        </div>
+
+        <div class="slide fade">
+          <img src="https://s2.glbimg.com/pk41pOt18-3Wow3K3Wj64lj6lAY=/620x465/s.glbimg.com/jo/g1/f/original/2015/06/11/dsc00707.jpg" alt="Partituras antigas">
+          <div class="legenda-slide">Sanfona e artefatos Originais do Rei do Baião</div>
+        </div>
+
+        <div class="slide fade">
+          <img src="https://www.brasildefato.com.br/wp-content/uploads/2024/09/image_processing20200201-29235-o1v471.jpg" alt="Chapéu de couro e roupas típicas">
+          <div class="legenda-slide">Indumentária Típica: O Chapéu de Couro e Roupas de Apresentação</div>
+        </div>
+
+        <!-- Botões de Navegação Anterior/Próximo -->
+        <button class="btn-anterior" onclick="mudarSlide(-1)">&#10094;</button>
+        <button class="btn-proximo" onclick="mudarSlide(1)">&#10095;</button>
+      </div>
+
+      <!-- Indicadores (Bolinhas) -->
+      <div class="indicadores">
+        <span class="ponto ativo" onclick="irParaSlide(0)"></span>
+        <span class="ponto" onclick="irParaSlide(1)"></span>
+        <span class="ponto" onclick="irParaSlide(2)"></span>
+      </div>
+    </section>
+
+    <article id="historia">
+      <h2>A História do Rei do Baião</h2>
+      <p>Luiz Gonzaga do Nascimento foi um compositor e cantor brasileiro. Conhecido como o Rei do Baião, ele foi responsável por valorizar os ritmos nordestinos, como o forró, o xote e o baião, levando a cultura do sertão para todo o Brasil.</p>
+    </article>
+
+    <article id="cidade">
+      <h2>Exu, Pernambuco</h2>
+      <p>Nascido na Fazenda Caiçara, no município de Exu, sertão de Pernambuco, Gonzaga nunca esqueceu suas raízes. A cidade hoje abriga o museu e preserva a memória viva do seu filho mais ilustre.</p>
+    </article>
+
+    <article id="musicas">
+      <h2>Obras Inesquecíveis</h2>
+      <ul>
+        <li><strong>Asa Branca:</strong> O hino do nordeste brasileiro.</li>
+        <li><strong>O Xote das Meninas:</strong> Um clássico atemporal.</li>
+        <li><strong>Pagode Russo:</strong> Ritmo acelerado e inconfundível.</li>
+      </ul>
+    </article>
+  </main>
+
+  <aside class="barra-lateral">
+    <h3>Localização do Museu</h3>
+    <p>📍 <strong>Endereço:</strong> Parque Aza Branca, BR-122 - Exu, PE, 56230-000</p>
+    <p>🕒 <strong>Horário de Funcionamento:</strong><br> Terça a Domingo, das 09h às 17h</p>
+    <div class="mapa-placeholder">
+      <p>Mapa Interativo</p>
+    </div>
+  </aside>
+</div>
+
+<footer class="rodape">
+  <p>&copy; 2024 Museu Gonzagão - Centro de Referência do Baião.</p>
+  <div class="links-rodape">
+    <a href="#">Política de Privacidade</a> | <a href="#">Contato</a>
+  </div>
+</footer>
